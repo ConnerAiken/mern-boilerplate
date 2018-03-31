@@ -1,0 +1,53 @@
+{
+  "name": "react-node-webpack-boilerplate",
+  "version": "0.0.0-0",
+  "description": "React/Nodejs + Webpack",
+  "main": "build/bundle.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.common.js --mode production",
+    "dev": "webpack-dev-server --config webpack.common.js --mode development  --open",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo \"This script is coming soon!\" && exit 0",
+    "upgradeDeps": "ncu -u",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FittedTech/react-node-webpack.git"
+  },
+  "keywords": [
+    "react",
+    "node",
+    "webpack",
+    "4",
+    "boilerplate"
+  ],
+  "author": "Conner Aiken",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FittedTech/react-node-webpack/issues"
+  },
+  "homepage": "https://github.com/FittedTech/react-node-webpack#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.1.0",
+    "node-sass": "^4.8.3",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-hot-loader": "^4.0.0",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  }
+}

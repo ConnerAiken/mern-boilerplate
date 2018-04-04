@@ -36,7 +36,8 @@ Master Branch
 3) Running the application
    - Development Mode (Client only): `npm run dev` then open `http://localhost:8080` in a browser
    - Production Bundle (Client only): `npm run build` then import the client code somewhere
-   - Standalone (Client+Server): `npm start` then open `http://localhost` in a browser
+   - Standalone (Client+Server): `npm start` then open `http://localhost:8080` in a browser
+   - Dockerized /w MongoDB: `npm run start:docker` - more to come
 
 ## Assumptions
 

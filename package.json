@@ -10,7 +10,9 @@
     "build": "webpack --config webpack.common.js --mode production",
     "dev": "webpack-dev-server --config webpack.common.js --mode development --open --watch",
     "test": "echo \"Error: no test specified but lets exit with success so travis builds\" && exit 0",
-    "start": "npm run build && babel-node src/server/index.js  --presets=env,stage-0",
+    "prestart": "npm run build",
+    "start": "babel-node src/server/index.js  --presets=env,stage-0",
+    "start:docker": "docker-compose up",
     "upgradeDeps": "ncu -u",
     "prepublishOnly": "npm run build"
   },
@@ -20,9 +22,11 @@
   },
   "keywords": [
     "react",
+    "express",
     "node",
     "webpack",
-    "4",
+    "webpack 4",
+    "mern",
     "boilerplate"
   ],
   "author": "Conner Aiken",

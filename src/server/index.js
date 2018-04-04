@@ -15,6 +15,6 @@ app.get('/api', (req, res) => {
     res.send('Express to the rescue!');
 });
 
-app.listen(8080, () => {
-    utils.log('Server has started and is listening on port 80!')
+app.listen(process.env.port, () => {
+    utils.log(`Server has started and is listening on port ${process.env.port}!`)
 });

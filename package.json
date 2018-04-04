@@ -8,9 +8,9 @@
   },
   "scripts": {
     "build": "webpack --config webpack.common.js --mode production",
-    "dev": "webpack-dev-server --config webpack.common.js --mode development  --open",
+    "dev": "webpack-dev-server --config webpack.common.js --mode development --open --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "echo \"This script is coming soon!\" && exit 0",
+    "start": "npm run build && babel-node src/server/index.js  --presets=env,stage-0",
     "upgradeDeps": "ncu -u",
     "prepublishOnly": "npm run build"
   },
@@ -32,12 +32,15 @@
   },
   "homepage": "https://github.com/FittedTech/react-node-webpack#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.11",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.1.0",
     "node-sass": "^4.8.3",

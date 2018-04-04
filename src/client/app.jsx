@@ -1,9 +1,6 @@
 // Node.JS
 import React from "react";
 import ReactDOM from "react-dom";
-
-// Application
-import styles from "./app.scss";
   
 const App = () => {
   return (

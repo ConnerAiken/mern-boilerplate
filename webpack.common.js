@@ -15,8 +15,7 @@ const paths = {
 }; 
 
 module.exports = {
-    devtool: "source-map",
-    stats: "minimal",
+    devtool: "source-map", 
     entry: [
       'react-hot-loader/patch',
       paths.entryClient
@@ -94,7 +93,7 @@ module.exports = {
     cache: false,
     bail: true,
     profile: true,
-    watch: true,
+    watch: false,
     watchOptions: {
       aggregateTimeout: 1000, 
       poll: true,

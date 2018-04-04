@@ -1,5 +1,15 @@
 # MERN Boilerplate - MongoDB, Express, React, NodeJS
- 
+
+## Status
+
+Dev Branch
+
+ [![Build Status](https://travis-ci.org/ConnerAiken/mern-boilerplate.svg?branch=dev)](https://travis-ci.org/ConnerAiken/mern-boilerplate)
+
+Master Branch
+
+ [![Build Status](https://travis-ci.org/ConnerAiken/mern-boilerplate.svg?branch=master)](https://travis-ci.org/ConnerAiken/mern-boilerplate)
+
 ## Dependencies 
 
 - NodeJS (9+ preferred)
@@ -34,6 +44,10 @@
 - This boilerplate was developed using linux mint (Ubuntu 14 - Xenial), it should be cross platform so please report any issues using the github issue tracker.
 - If you run the 'npm run updateDeps' script, you will need to have npm-check-updates globally installed: `npm install -g npm-check-updates`   
 
+## Transpiling/Bundling/Polyfills
+
+We currently use babel configured with preset-env, preset-react and preset-stage-0. Eventually the polyfill.io cdn will be primarily used.
+
 ## Resources/Sources
 
 ### Lifecycle scripts
@@ -49,6 +63,7 @@ Some of this work came from Valentino G's blog: https://www.valentinog.com/blog/
 
 ## TODO
 
+- [ ] Add polyfill.io to html-webpack-plugin
 - [ ] Add mocha/webdriverio tests
 - [ ] Using webpack-merge or lodash for webpack.*env*.js files
 - [ ] Add documentation library

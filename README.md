@@ -58,3 +58,4 @@ Some of this work came from Valentino G's blog: https://www.valentinog.com/blog/
 - [ ] Add deployment command for dockerized mongodb
 - [ ] Dockerize the boilerplate
 - [ ] Use docker-swarm/docker-compose to run the docker containers together
+- [ ] Add webpack bundle analyzer npm script (pipe --stats > stats.json directly into analyzer)

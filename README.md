@@ -1,8 +1,14 @@
 # MERN Boilerplate - MongoDB, Express, React, NodeJS
 
 ## Status
-Dev: [![Build Status](https://travis-ci.org/ConnerAiken/mern-boilerplate.svg?branch=dev)](https://travis-ci.org/ConnerAiken/mern-boilerplate)
-Master: [![Build Status](https://travis-ci.org/ConnerAiken/mern-boilerplate.svg?branch=master)](https://travis-ci.org/ConnerAiken/mern-boilerplate)
+
+Dev Branch
+
+ [![Build Status](https://travis-ci.org/ConnerAiken/mern-boilerplate.svg?branch=dev)](https://travis-ci.org/ConnerAiken/mern-boilerplate)
+
+Master Branch
+
+ [![Build Status](https://travis-ci.org/ConnerAiken/mern-boilerplate.svg?branch=master)](https://travis-ci.org/ConnerAiken/mern-boilerplate)
 
 ## Dependencies 
 

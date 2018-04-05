@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node src/server/app.js",
-    "prestart": "webpack --mode development"
+    "prestart": "webpack --mode development",
+    "test": "jest --config=jest.json",
+    "lint": "eslint --fix --config .eslintrc.json ./src/client",
+    "precommit": "npm run lint && npm run test"
   },
   "repository": {
     "type": "git",
@@ -26,14 +29,21 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
     "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "husky": "^0.14.3",
+    "jest": "^22.4.3",
+    "jest-css-modules": "^1.1.0",
     "node-sass": "^4.8.3",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
+    "react-test-renderer": "^16.3.2",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3"
   }

@@ -1,0 +1,7 @@
+{
+    "verbose": true,
+    "bail": true,    
+    "transform": {".*": "<rootDir>/node_modules/jest-css-modules"},
+    "testMatch": ["<rootDir>/src/tests/suites/*.js"], 
+    "setupFiles": ["<rootDir>/src/tests/bootstrap.js"]
+} 

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders with h1 text 1`] = `
+<h1>
+  Hello from React!
+</h1>
+`;

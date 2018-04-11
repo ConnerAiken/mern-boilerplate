@@ -2,12 +2,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
   
-const App = () => {
-  return (
-    <div>
-      <p>React reporting in!</p>
-    </div>
-  );
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    
+    const test = [1,2,3];
+    console.log(test.includes(1));
+  }
+
+  render() {
+    return (
+      <div>
+        <p>React reporting in!</p>
+      </div>
+    );
+  }
 };
 
 export default App;

@@ -56,14 +56,7 @@ module.exports = {
           }]
         }
       ]
-    },
-    plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        new HtmlWebPackPlugin({
-          template: paths.src,
-          filename: paths.destHtml
-        })
-    ],
+    }, 
     performance: {
       hints: "warning",
       maxAssetSize: 2000000, // Bytes..

@@ -7,19 +7,17 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 // Helper Variables
 const paths = {
-  entryClient: path.resolve(__dirname,  "src", "client", 'index.js'),
-  src: path.resolve(__dirname,  "src", "client", "index.html"),
-  dest: path.resolve(__dirname, 'public'),
-  destHtml: path.resolve(__dirname, 'public', 'index.html'),
-  contentBase: path.join(__dirname, 'public')
+  entry: path.resolve(process.cwd(),  'src', 'client.js'),
+  src: path.resolve(process.cwd(),  'src'),
+  dest: path.resolve(process.cwd(), 'src', 'static'),
+  destHtml: path.resolve(process.cwd(), 'src', 'static', 'index.html')
 }; 
 
 module.exports = {
     devtool: "source-map", 
     entry: [
-      'babel-polyfill',
-      'react-hot-loader/patch',
-      paths.entryClient
+      'babel-polyfill', 
+      paths.entry
     ],
     output: {
       path: paths.dest,

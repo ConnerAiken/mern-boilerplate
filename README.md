@@ -6,6 +6,7 @@
 
 ## Dependencies 
 
+- Python 2 (node-gyp)
 - NodeJS (9+ preferred)
 - Docker (CE is fine, 17+ preferred)
 

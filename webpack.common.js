@@ -17,7 +17,7 @@ const paths = {
 module.exports = {
     devtool: "source-map", 
     entry: [
-      'babel-polyfill',
+      '@babel/polyfill',
       'react-hot-loader/patch',
       paths.entryClient
     ],

@@ -1,0 +1,22 @@
+.
+├── client
+│   ├── app.jsx
+│   ├── app.scss
+│   ├── helpers
+│   │   └── utils.js
+│   ├── index.html
+│   └── index.js
+├── controllers
+│   └── user.controller.js
+├── models
+│   ├── FriendRequest.model.js
+│   └── user.model.js
+├── routes
+│   └── user.routes.js
+├── server
+│   ├── helpers
+│   │   └── utils.js
+│   └── index.js
+└── testtt.txt
+
+7 directories, 12 files

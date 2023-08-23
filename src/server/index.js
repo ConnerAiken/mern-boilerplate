@@ -10,7 +10,7 @@ global.dotenv = dotenv;
 
 utils.loadENV();
 const app = express();
-
+app.use(express.json());
 app.use(express.static(path.resolve(process.cwd(), 'public')))
 
 app.use('/user', userrouter);
